@@ -1,0 +1,70 @@
+/* === RESET Y ESTILO GENERAL === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cursive ;
+  background-color: #FAD6A5; /* Fondo estilo Amardecer */
+  color: #E28E4B;
+}
+
+
+/* === HEADER === */
+header {
+  background-color: #E28E4B;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+/* === LAYOUT PRINCIPAL === */
+.contenedor {
+  display: flex;
+  height: calc(100vh - 80px); /* Ajuste del header */
+}
+
+/* === COLUMNA IZQUIERDA (Buscador) === */
+.columna-izquierda {
+  width: 30%;
+  background-color: #FCC996;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.bloque-buscador {
+  background-color: white;
+  border: 1px solid #CCC;
+  border-radius: 8px;
+  padding: 1em;
+  flex: 1;
+}
+
+.buscador {
+  width: 100%;
+  padding: 0.8em;
+  font-size: 1em;
+}
+
+/* === COLUMNA DERECHA (Bloques) === */
+.columna-derecha {
+  flex-grow: 1;
+  background-color: #FCF2C5;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.bloque {
+  background-color: white;
+  padding: 1em;
+  border-radius: 6px;
+  border: 1px solid #E28E4B;
+  animation: fade 0.5s ease-in-out;
+}
+
+/* === EFECTOS VISUALES === */
